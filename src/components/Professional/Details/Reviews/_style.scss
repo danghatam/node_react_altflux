@@ -1,0 +1,40 @@
+.reviews {
+	@include make-row();
+	background-color: $white;
+	padding: 20px;
+	text-align: center;
+	.total {
+		border-bottom: 1px solid $hr-border;
+		text-align: center;
+		padding-bottom: 15px;
+		font-size: $font-size-large;
+		border-bottom: 1px solid $gray-light;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.review {
+		@include make-md-column(12);
+		margin-bottom: 20px;
+		p, div, a {
+			margin-bottom: 5px;
+		}
+		.name {
+			font-size: $font-size-large;
+		}
+		.rating {
+			i {
+				color: $qanvast-green;
+			}
+		}
+		.comment {
+
+		}
+		.readmore {
+			color: $gray-base;
+			font-weight: bold;
+		}
+	}
+	section {
+		margin-bottom: 20px;
+	}
+}

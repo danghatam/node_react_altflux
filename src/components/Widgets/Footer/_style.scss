@@ -1,0 +1,32 @@
+.page-footer {
+  background-color: $qanvast-dark-white;
+  padding-top: 24px;
+
+  > .container {
+    > .row {
+      text-align: center;
+      > section {
+        @include make-md-column(3);
+        p:first-child {
+          font-size: $font-size-large;
+          margin-bottom: 20px;
+        }
+        .fa {
+          margin: 0 10px;
+        }
+      }
+      .policy-links {
+        a {
+          color: $text-color !important;
+          text-decoration: underline;
+        }
+        a:hover {
+          color: $gray-light !important;
+        }
+      }
+    }
+    > hr {
+      border-top: 1px outset $text-color;
+    }
+  }
+}

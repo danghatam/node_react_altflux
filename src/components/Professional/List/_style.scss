@@ -1,0 +1,55 @@
+@import './Filter/style';
+.professional-list{
+	@include make-row();
+	.professional{
+		 @include make-md-column(6); 
+		 @include make-xs-column(12);
+		.showcase{
+			width: 100%;
+			text-align: left;
+			img {
+				@extend .showcase;
+			}
+		}
+		.info{
+			@include make-row();
+			padding: 20px;
+			.logo{
+				@include make-md-column(3);
+				img {
+					width: 100px;
+				}
+			}
+			.contact{
+				@include make-md-column(9);
+				padding: 10px;
+				p{
+					margin: 0 0 7px 0;
+				}
+				.category{
+					font-size: $font-size-large;
+					font-style: italic;
+				}
+				.name{
+					font-size: $font-size-large;
+					font-weight: bold;
+					cursor: pointer;
+					text-decoration: none;
+					color: $gray-base;
+				}
+				.address{
+					font-size: $font-size-base;
+					margin-bottom: 20px;
+				}
+				.email, .phone{
+					span{
+						color: $qanvast-green;
+					}
+					i {
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.article-sidebar {
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  background-color: $qanvast-dark-white;
+
+  .panel-heading {
+    text-align: center;
+    background-color: #999999;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    h3 {
+      font-size: $font-size-large;
+      color: $white;
+      line-height: 30px;
+    }
+  }
+  .panel-body {
+    padding: 0px;
+  }
+
+  a.list-group-item {
+    background-color: transparent;
+    padding-left: 20px;
+  }
+  a.list-group-item:hover {
+    padding-left: 10px;
+    border-left: 10px solid $qanvast-orange;
+  }
+
+}

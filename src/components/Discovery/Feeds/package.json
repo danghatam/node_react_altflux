@@ -1,0 +1,6 @@
+{
+    "name": "Feeds",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./Feeds.jsx"
+}

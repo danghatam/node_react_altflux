@@ -1,0 +1,79 @@
+@mixin threedeetext($color) {
+  color: $color;
+  text-shadow: 0 1px 0 darken($color, 14%), 0 2px 0 darken($color, 16%), 1px 4px 15px rgba(0, 0, 0, .1), 1px 4px 5px rgba(0, 0, 0, .3);
+}
+
+@mixin threedeebox($color) {
+  // background-color: $color;
+  box-shadow: 0 1px 0 darken($color, 14%), 0 2px 0 darken($color, 16%), 1px 4px 15px rgba(0, 0, 0, .1), 1px 4px 5px rgba(0, 0, 0, .3);
+}
+
+a.fixed-top-link {
+  display: block;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: #e53c33;
+
+  &:visited {
+    color: white;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #ff8b85;
+    text-decoration: none;
+  }
+}
+
+.btn-qanvast {
+  background-color: $white;
+  border-color: $qanvast-green;
+  color: $qanvast-green;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-color: lighten($qanvast-green, 48%);
+    border-color: $qanvast-green;
+    color: $qanvast-green;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none; // Get rid of outline for Chrome browsers
+}
+
+//a:active,
+//a:hover,
+//a:focus,
+//a:visited {
+//  @include threedeetext($gray-dark);
+//}
+
+.no-js-warning {
+  margin-top: 20px;
+}
+
+.js .no-js-warning {
+  display: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.Select {
+  margin: 0px 30px;
+  text-align: left;
+}

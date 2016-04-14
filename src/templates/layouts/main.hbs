@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        {{> metadata }}
+        {{!> favicons }}
+        {{> zopim }}
+
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+        {{> modernizr}}
+
+        <script async src="/js/app.js"></script>
+        {{#if app.addthis.id}}
+            <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{{ app.addthis.id }}}"></script>
+        {{/if}}
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <a href="http://www.enable-javascript.com/" id="no-js-warning" class="fixed-top-link">
+            Oh no! Your JavaScript is turned off! This website will not work without it. :(
+            <br>
+            <br>
+            Click for instructions on how to enable JavaScript.
+        </a>
+        <div id="app">
+            {{{ body }}}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+#home-bar {
+  @include make-row();
+  background-color: $qanvast-dark-white;
+  section {
+    @include make-md-column(2.4);
+    @media (min-width: $screen-md-min) {
+      text-align: center;
+      span {
+        display: block;
+      }
+      span:not(.icon-xl) {
+        padding-top: 5px;
+      }
+    }
+    @media (max-width: $screen-sm-max) {
+      position: relative;
+      text-align: left;
+      span {
+        display: inline;
+      }
+      span:not(.icon-xl) {
+        position: relative;
+        top: -13px;
+        left: 10px;
+      }
+    }
+    padding: 30px 50px;
+  }
+}
+
+// Addthis buttons
+#at4-share, #at4-soc {
+  top: auto !important;
+  bottom: 5% !important;
+}

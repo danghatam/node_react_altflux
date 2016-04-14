@@ -1,0 +1,45 @@
+.filter-wrapper {
+	@include make-row();
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #ddf0ed;
+	padding: 15px 0;
+	margin-bottom: 15px;
+	.filter {
+		select {
+			background: none;
+			border: none;
+			box-shadow: none;
+			font-weight: bold;
+			width: 100px;
+		}
+		i {
+			font-size: 150%;
+		}
+	}
+	.vr {
+		border: 1px solid $qanvast-green;
+		margin: 0 20px;
+	}
+	.search {
+		padding-left: 12px;
+		input {
+			background: none;
+			border: none;
+			box-shadow: none;
+			padding: 0;
+		}
+	}
+
+	.filter, .search {
+		.form-group {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	i {
+		margin-right: 10px;
+	}
+}

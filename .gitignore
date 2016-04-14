@@ -1,0 +1,29 @@
+coverage/
+.DS_Store
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.swp
+*.swo
+benchmarks/graphs
+testing
+node_modules/
+.idea
+supervisor.log
+tmp/
+.sass_cache/
+bower_components/
+
+# Layer private key cert
+layer-key.pem
+
+# Ignoring build folders/files
+public/
+server/
+views/
+
+# Ignoring test output
+.tests/

@@ -1,0 +1,17 @@
+.categories {
+  	padding: 30px 50px;
+	@include make-row();
+	.category {
+		@include make-md-column(4);
+		@include make-xs-column(12);
+		&>div{
+			cursor: pointer;
+			height: 280px;
+		}
+		h2 {
+			color: $white;
+			line-height: 280px;
+			text-align: center;
+		}
+	}
+}

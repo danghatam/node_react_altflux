@@ -1,0 +1,59 @@
+.discovery-feeds {
+  padding: 30px 15px;
+  .title, .description {
+    text-align: center;
+  }
+  .description {
+    font-size: $font-size-large;
+  }
+  .feeds-container {
+    @include make-row();
+    .feed-widget {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .widget-content {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 280px;
+        color: $white;
+        .widget-bottom-addon {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          padding: 20px;
+        }
+        .widget-top-left-addon {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          .widget-price {
+            margin-top: 15px;
+            padding: 10px 10px 10px 25px;
+            background-color: rgba(51,51,51,0.5);
+          }
+        }
+        .widget-top-right-addon {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          padding: 15px;
+          .widget-category {
+            border: 1px solid $qanvast-green;
+            border-radius: 15px;
+            padding: 5px 10px;
+            color: $qanvast-green;
+          }
+        }
+      }
+    }
+    .widget-size-expanded {
+      @include make-md-column(8);
+    }
+    .widget-size-standard {
+      @include make-md-column(4);
+    }
+  }
+}
+

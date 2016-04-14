@@ -1,0 +1,32 @@
+.slider {
+  @media (min-width: $screen-lg-min) {
+    font-size: 100%;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    font-size: 80%;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    font-size: 60%;
+  }
+  @media (max-width: $screen-xs-max) {
+    font-size: 40%;
+  }
+
+  .carousel-text {
+    color: $white !important;
+  }
+  a.carousel-navigation {
+    cursor: pointer;
+    color: $white !important;
+  }
+  a.carousel-navigation-disabled {
+    cursor: not-allowed;
+    color: $text-muted !important;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .icon-lg {
+    font-weight: bold;
+  }
+}
